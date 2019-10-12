@@ -5,13 +5,17 @@
     "packages/*"
   ],
   "scripts": {
-    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js"
+    "build": "lerna exec --parallel -- babel --root-mode upward src -d lib --ignore **/*.story.js",
+    "bootstrap": "lerna bootstrap --use-workspaces",
+    "dev": "start-storybook -p 5555",
+    "release": "lerna publish --registry http://localhost:4873"
   },
   "devDependencies": {
     "@babel/cli": "^7.6.4",
     "@babel/core": "^7.6.4",
     "@babel/preset-env": "^7.6.3",
     "@babel/preset-react": "^7.6.3",
+    "@storybook/react": "^5.2.3",
     "babel-core": "7.0.0-bridge.0",
     "babel-loader": "^8.0.6",
     "lerna": "^3.16.4",

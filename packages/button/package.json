@@ -1,0 +1,17 @@
+{
+  "name": "@vm/button",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "dependencies": {
+    "react": "16.8.5",
+    "react-dom": "16.8.5"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "author": "Vaibhav Shringarpure",
+  "license": "MIT"
+}
